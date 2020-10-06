@@ -3,7 +3,7 @@ import React from "react";
 import SearchPage from "./components/SearchPage";
 import Tables from "./components/Tables";
 import Header from "./components/Header";
-import Wrapper from "./components/wrapper";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
