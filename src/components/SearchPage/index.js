@@ -1,6 +1,10 @@
 import React from "react";
 // get materialize imports
 import "materialize-css/dist/css/materialize.min.css";
+// get fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import your icons
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function SearchPage(props) {
   console.log(props.employee);
@@ -14,18 +18,9 @@ function SearchPage(props) {
             name="employee"
             lost="employees"
             className="form-control form-control-sm ml-3 w-75"
-            type="Search"
-            placeholder="Search your employee's name here..."
-            aria-label="Search"
+            type="text"
+            placeholder="Employee's name"
           />
-          <datalist id="employee">
-            {props.employee.map((emp) => (
-              <option
-                value={emp.name.first + " " + emp.name.last}
-                key={emp.name.first}
-              />
-            ))}
-          </datalist>
         </div>
       </div>
     </div>

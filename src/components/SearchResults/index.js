@@ -42,7 +42,7 @@ function SearchResults(props) {
 
           <tbody>
             {props.employee.map((emp, index) => (
-              <tr>
+              <tr key={emp.name.first}>
                 <th scope="row">{index + 1}</th>
                 <td>
                   {emp.name.first} {emp.name.last}

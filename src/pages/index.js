@@ -24,7 +24,25 @@ class Index extends Component {
 
   handleInputChange = (event) => {
     this.setState({ search: event.target.value });
+
+    const filteredList = this.state.employees.filter((filter) => {
+      let chosenEmp = filter.name.first + filter.name.last;
+      return chosenEmp.indexOf(this.state.search) !== -1;
+    });
+    console.log(filteredList);
+    this.setState({ filteredEmp: filteredList });
   };
+
+  // handleFormSubmit= (event) => {
+  //   event.preventDefult();
+  //   API.getEmployees(this.state.search)
+  //   .then((res) => {
+  //     if (res.data.status === "error") {
+  //       throw new Error(res.data.message);
+  //     }
+  //     this.setState({results: res.data.message, error: ""});
+  //   })
+  // }
 
   render() {
     return (

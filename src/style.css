@@ -44,6 +44,11 @@ h4 {
   font-weight: bold;
 }
 
+#submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 a {
   color: rgb(255, 251, 0);
 }
