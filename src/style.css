@@ -32,6 +32,12 @@ table {
 }
 
 h4 {
+  margin-bottom: 40px;
   text-align: center;
   color: white;
+}
+
+#search {
+  background-color: rgba(105, 105, 105, 0.61);
+  font-weight: bold;
 }

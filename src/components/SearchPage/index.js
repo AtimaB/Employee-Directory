@@ -7,7 +7,7 @@ function SearchPage(props) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col s6 offset-s3">
+        <div className="col s6 offset-s3" id="search">
           <input
             value={props.search}
             onChange={props.handleInputChange}
