@@ -21,7 +21,7 @@ function SearchResults(props) {
   }
   return (
     <div className="row">
-      <div className="col s10 m10 l10 offset-l1">
+      <div className="col s12 m10 l10 offset-l1">
         <table className="centered responsive-table striped z-depth-3">
           <thead>
             <tr>
@@ -42,7 +42,7 @@ function SearchResults(props) {
 
           <tbody>
             {props.employee.map((emp, index) => (
-              <tr key={emp.name.first}>
+              <tr key={emp.dob.date}>
                 <th scope="row">{index + 1}</th>
                 <td>
                   {emp.name.first} {emp.name.last}

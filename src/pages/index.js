@@ -11,6 +11,8 @@ class Index extends Component {
     employees: [],
     result: [],
     error: "",
+    filteredEmp: [],
+    isActive: false,
   };
 
   componentDidMount() {
@@ -25,24 +27,18 @@ class Index extends Component {
   handleInputChange = (event) => {
     this.setState({ search: event.target.value });
 
+    event.target.value
+      ? this.setState({ isActive: true })
+      : this.setState({ isActive: false });
+
     const filteredList = this.state.employees.filter((filter) => {
       let chosenEmp = filter.name.first + filter.name.last;
       return chosenEmp.indexOf(this.state.search) !== -1;
     });
     console.log(filteredList);
+    console.log(this.state.filteredEmp);
     this.setState({ filteredEmp: filteredList });
   };
-
-  // handleFormSubmit= (event) => {
-  //   event.preventDefult();
-  //   API.getEmployees(this.state.search)
-  //   .then((res) => {
-  //     if (res.data.status === "error") {
-  //       throw new Error(res.data.message);
-  //     }
-  //     this.setState({results: res.data.message, error: ""});
-  //   })
-  // }
 
   render() {
     return (
@@ -52,7 +48,11 @@ class Index extends Component {
           handleInputChange={this.handleInputChange}
           employee={this.state.employees}
         />
-        <SearchResults employee={this.state.employees} />
+        {this.state.isActive ? (
+          <SearchResults employee={this.state.filteredEmp} />
+        ) : (
+          <SearchResults employee={this.state.employees} />
+        )}
       </div>
     );
   }
