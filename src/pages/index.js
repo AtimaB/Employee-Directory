@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-// import Headers from "../components/Headers";
 import SearchPage from "../components/SearchPage";
-// import Tables from "../components/Tables";
 import SearchResults from "../components/SearchResults";
 
 class Index extends Component {
@@ -32,7 +30,8 @@ class Index extends Component {
       : this.setState({ isActive: false });
 
     const filteredList = this.state.employees.filter((filter) => {
-      let chosenEmp = filter.name.first + filter.name.last;
+      let chosenEmp =
+        filter.name.first + filter.name.last + filter.email + filter.phone;
       return chosenEmp.indexOf(this.state.search) !== -1;
     });
     console.log(filteredList);
