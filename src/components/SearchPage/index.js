@@ -15,7 +15,7 @@ function SearchPage(props) {
             lost="employees"
             className="form-control form-control-sm ml-3 w-75"
             type="Search"
-            placeholder="Enter your employee's name"
+            placeholder="Search your employee's name here..."
             aria-label="Search"
           />
           <datalist id="employee">

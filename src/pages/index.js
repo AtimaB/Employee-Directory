@@ -29,7 +29,7 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <h4>Welcomt to our company's employee directory!</h4>
+        <h4>Welcome to our company's employee directory!</h4>
         <SearchPage
           handleInputChange={this.handleInputChange}
           employee={this.state.employees}
