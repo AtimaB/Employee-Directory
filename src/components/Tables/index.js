@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-// get materialize imports
+import React from "react";
 import "materialize-css/dist/css/materialize.min.css";
 // get fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +11,6 @@ import {
 // import data
 
 const Tables = () => {
-  //   const context = useContext(DataAreaContext);
   return (
     <div className="container">
       <div className="row">
@@ -21,6 +19,7 @@ const Tables = () => {
             <thead>
               <tr>
                 <th>Name</th>
+                <th>Image</th>
                 <th>
                   <FontAwesomeIcon icon={faPhone} /> Phone Number
                 </th>
@@ -32,14 +31,6 @@ const Tables = () => {
                 </th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Atima Bennett</td>
-                <td>307-413-9336</td>
-                <td>atima@gmail.com</td>
-                <td>123 Draper,Utah 84020</td>
-              </tr>
-            </tbody>
           </table>
         </div>
       </div>

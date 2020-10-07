@@ -2,7 +2,7 @@ import React from "react";
 // get materialize imports
 import "materialize-css/dist/css/materialize.min.css";
 
-const Header = () => {
+const Headers = () => {
   return (
     <div className="container">
       <div className="row">
@@ -14,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headers;

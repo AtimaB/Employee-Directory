@@ -1,19 +1,19 @@
 import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
-import SearchPage from "./components/SearchPage";
-import Tables from "./components/Tables";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import Headers from "./components/Headers";
 import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <div>
-      <Wrapper>
-        <Header />
-        <SearchPage />
-        <Tables />
-      </Wrapper>
-    </div>
+    <Router>
+      <div>
+        <Headers />
+        <Wrapper>
+          <Route exact path="/" component={Index} />
+        </Wrapper>
+      </div>
+    </Router>
   );
 }
 
