@@ -1,10 +1,6 @@
 import React from "react";
 // get materialize imports
 import "materialize-css/dist/css/materialize.min.css";
-// get fontawesome imports
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import your icons
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function SearchPage(props) {
   return (
