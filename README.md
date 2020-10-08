@@ -43,4 +43,3 @@ To install the necessary dependencies, run the following command.
 ## Tests
 
 ![employee GIF ](./Assets/employee.gif)
-![employee PNG](./Assets/employee.png)
