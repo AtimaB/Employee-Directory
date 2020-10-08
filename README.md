@@ -39,7 +39,7 @@ To install the necessary dependencies, run the following command.
 
 ## Link
 
-#### [Click here for deployed link!](#)
+#### [Click here for deployed link!](https://atimab.github.io/Employee-Directory/#/)
 
 ## Tests
 
