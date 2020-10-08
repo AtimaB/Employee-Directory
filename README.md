@@ -34,6 +34,8 @@ To install the necessary dependencies, run the following command.
 
 - [Materialize with React](https://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome)
 
+- [ How to Sort an Array of Objects in JavaScript](https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/)
+
 ## Link
 
 #### [Click here for deployed link!](#)
