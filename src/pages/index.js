@@ -16,11 +16,24 @@ class Index extends Component {
   componentDidMount() {
     API.getEmployees()
       .then((res) => {
-        this.setState({ employees: res.data.results });
+        this.setState({ employees: res.data.results.sort(this.compareFnc) });
         console.log(res);
       })
       .catch((err) => console.log(err));
   }
+
+  compareFnc = (a, b) => {
+    const varA = a.name.first.toUpperCase();
+    const varB = b.name.first.toUpperCase();
+
+    let comparison = 0;
+    if (varA > varB) {
+      comparison = 1;
+    } else if (varA < varB) {
+      comparison = -1;
+    }
+    return comparison;
+  };
 
   handleInputChange = (event) => {
     this.setState({ search: event.target.value });
