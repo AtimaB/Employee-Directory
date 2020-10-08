@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import SearchPage from "../components/SearchPage";
 import SearchResults from "../components/SearchResults";
-
+import Footer from "../components/Footer";
 class Index extends Component {
   state = {
     search: [],
@@ -65,6 +65,7 @@ class Index extends Component {
         ) : (
           <SearchResults employee={this.state.employees} />
         )}
+        <Footer />
       </div>
     );
   }
