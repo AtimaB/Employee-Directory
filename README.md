@@ -4,7 +4,7 @@
 
 ## Overview
 
-I create a employee directory with React by breaking up the application's UI into components, manage component state, and respond to user events.
+I create an employee directory with React by breaking up the application's UI into components, manage component state, and respond to user events.
 
 This app utilizes an API to populate random employee. The users on the app can search for employees by **"First Name","Last Name", "Email" and "Phone Number"**.
 
